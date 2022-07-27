@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eayvali <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 13:45:11 by eayvali           #+#    #+#             */
-/*   Updated: 2022/07/27 13:59:30 by eayvali          ###   ########.fr       */
+/*   Created: 2022/07/27 13:33:22 by eayvali           #+#    #+#             */
+/*   Updated: 2022/07/27 13:52:28 by eayvali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
-	char	alphabet;
+	char	a;
 
-	alphabet = 'a';
-	while (alphabet <= 'z')
+	a = 'z';
+	while (a >= 'a')
 	{
-		ft_putchar(alphabet);
-		alphabet++;
+		ft_putchar(a);
+		a--;
 	}
 }

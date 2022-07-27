@@ -6,7 +6,7 @@
 /*   By: eayvali <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 16:07:38 by eayvali           #+#    #+#             */
-/*   Updated: 2022/07/25 17:34:12 by eayvali          ###   ########.fr       */
+/*   Updated: 2022/07/27 16:17:53 by eayvali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,20 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-void ft_is_negative(int n);
-{ 
-	char positive;
-	char negative;
 
-	negative ='N';
-	positive ='P'; 
+void	ft_is_negative(int n)
+{
+	char	positive;
+	char	negative;
 
+	negative = 'N';
+	positive = 'P';
 	if (n >= 0)
 	{
-			ft_putchar(positive);
+		ft_putchar (positive);
 	}
 	else
 	{
-			ft_putchar(negative);
+		ft_putchar (negative);
 	}
-
-}
-int main()
-{
-		ft_is_negative(int n);
 }

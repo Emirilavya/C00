@@ -6,23 +6,20 @@
 /*   By: eayvali <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 15:49:40 by eayvali           #+#    #+#             */
-/*   Updated: 2022/07/25 16:00:12 by eayvali          ###   ########.fr       */
+/*   Updated: 2022/07/27 17:15:17 by eayvali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-	char c;
-	c ='1';
-		while(c <= '9')
+	char	c;
+
+	c = '1';
+	while (c <= '9')
 	{
 		write(1, &c, 1);
 		c++;
 	}
-}
-int main()
-{
-	ft_print_numbers();
 }
